@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "rdflib-builder"
+version = "24.1"
+description = "A pythonic, class-based interface for creation of rdf resources based on the rdflib package"
+authors = ["Sam <samuel.scott.jennings@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "skos_builder"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+babel = "^2.16.0"
+
+[tool.poetry.group.dev.dependencies]
+rdflib = "^7.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
